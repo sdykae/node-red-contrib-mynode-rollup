@@ -1,8 +1,11 @@
 {
   "name": "node-red-contrib-mynode-rollup",
+  "description": "NODE-RED Typescript starter with rollup",
   "version": "1.0.0",
   "main": "src/index.ts",
   "license": "UNLICENSED",
+  "repository": "https://github.com/iuslkae/node-red-contrib-mynode-rollup.git",
+  "author": "iuslkae",
   "devDependencies": {
     "@rollup/plugin-typescript": "8.2.1",
     "@types/glob": "7.1.4",
@@ -26,10 +29,7 @@
   "dependencies": {
     "tslib": "2.3.0"
   },
-  "repository": "https://github.com/iuslkae/.git",
-  "author": "iuslkae",
   "scripts": {
-    "start": "nodemon --watch \"src/**\" --ext \"ts,json,env\" --ignore \"src/**/*.spec.ts\" --exec \"ts-node src/index.ts\"",
     "prebuild": "rimraf dist",
     "build": "rollup --config rollup.config.ts --configPlugin \"typescript={tsconfig:'./tsconfig.rollup.json'}\""
   },

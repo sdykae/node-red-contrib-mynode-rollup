@@ -29,6 +29,8 @@
   "dependencies": {
     "tslib": "2.3.0"
   },
+  "repository": "https://github.com/iuslkae/.git",
+  "author": "iuslkae",
   "scripts": {
     "start": "nodemon --watch \"src/**\" --ext \"ts,json,env\" --ignore \"src/**/*.spec.ts\" --exec \"ts-node src/index.ts\"",
     "prebuild": "rimraf dist",
@@ -38,5 +40,6 @@
     "nodes": {
       "mynode-rollup": "./dist/nodes/mynode-rollup/mynode-rollup.js"
     }
-  }
+  },
+  "keywords": ["node-red","typescript","rollup"]
 }
